@@ -1,0 +1,83 @@
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+.bm-burger-button::before{
+  content: "EXP|CON" !important; 
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: white;
+  transform: translate(20%, -20%);
+ position: absolute; 
+ transition: top 0.3s;
+}
+
+
+
+
+.bm-burger-bars {
+  background: white;
+}
+
+
+.bm-burger-bars-hover {
+  background: #708090;
+}
+
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  right:20% !important;
+}
+
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+  height: unset !important;
+  width: unset !important;
+}
+
+.bm-menu {
+  background: black;
+  padding: 2.5em 1.5em 0;
+  font-size: 2rem;
+  border-bottom-right-radius: 80%; 
+  padding-bottom: 2em;
+ overflow: hidden  !important;
+}
+
+
+.bm-morph-shape {
+  fill: black;
+}
+
+
+
+.bm-item {
+  display: inline-block;
+  color: #d1d1d1;
+  margin-bottom: 20px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.bm-item:hover {
+  color: #ffffff;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+
+}
+@media screen and(min-height:40vh) and (max-heigth:60vh){
+	.bm-burger-button::before{
+  color:red
+	}
+}
